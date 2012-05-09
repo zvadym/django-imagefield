@@ -6,7 +6,7 @@ package = 'advanced_imagefield'
 setup(
     name='django-advanced-imagefield',
     version='1.0',
-    description='Django image field with thumb.',
+    description='Django image field with thumb and size checking.',
     long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     author='Zabiiaka Vadim',
     author_email='dev@madprogrammer.net',

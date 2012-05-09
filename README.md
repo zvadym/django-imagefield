@@ -1,24 +1,24 @@
-Django image field with thumb and size check.
+Django image field with thumb and size checking.
 
 
 #models.py
 
-    from cms_images.fields import CmsImageField
-    from cms_images.models import Image
+    from advanced_imagefield.fields import AdvancedImageField
+    from advanced_imagefield.models import AdvancedImage
 
     class Item(models.Model):
         #single image
-        img = CmsImageField(u'Image', help_text=u'...', upload_to='items')
+        img = AdvancedImageField(u'Image', upload_to='items')
 
         #generic relation
-        img_more = GenericRelation(Image)
+        img_more = GenericRelation(AdvancedImage)
 
 
 
 #admin.py
 
-    from ..cms_images.admin import ImageInline
+    from advanced_imagefield.admin import ImageInline
 
     class ItemAdmin(admin.ModelAdmin):
         #generic relation
-        inlines  = [ImageInline, ]
+        inlines  = [AdvancedImageInline, ]

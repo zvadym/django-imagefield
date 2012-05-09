@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.contrib.contenttypes import generic
-from .models import Image
+from .models import AdvancedImage
 
-class ImageInline(generic.GenericTabularInline):
-    model = Image
+class AdvancedImageInline(generic.GenericTabularInline):
+    model = AdvancedImage
 
 
