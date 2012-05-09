@@ -7,7 +7,7 @@ setup(
     name='django-advanced-imagefield',
     version='1.0',
     description='Django image field with thumb.',
-    long_description = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
+    long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     author='Zabiiaka Vadim',
     author_email='dev@madprogrammer.net',
     packages=find_packages(),
